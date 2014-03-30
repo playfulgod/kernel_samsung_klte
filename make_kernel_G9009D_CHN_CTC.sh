@@ -1,0 +1,3 @@
+export VARIANT_DEFCONFIG=msm8974pro_sec_k3gduos_ctc_defconfig
+make msm8974_sec_defconfig
+make

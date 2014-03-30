@@ -1,0 +1,61 @@
+
+==============================================
+START : FUNC_BUILD_KERNEL
+==============================================
+
+build project=keur
+build common config=msm8974_sec_defconfig 
+build variant config=msm8974pro_sec_klte_eur_defconfig 
+build secure option= 
+build SEANDROID option= 
+make: Entering directory `/media/playfulgod/Android/Repos/CM11/kernel/samsung/klte'
+  HOSTCC  scripts/basic/fixdep
+  GEN     /media/playfulgod/Android/Repos/CM11/kernel/samsung/okernel/Makefile
+  HOSTCC  scripts/kconfig/conf.o
+  SHIPPED scripts/kconfig/zconf.tab.c
+  SHIPPED scripts/kconfig/zconf.hash.c
+  SHIPPED scripts/kconfig/zconf.lex.c
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+sound/soc/codecs/audience/Kconfig:40:warning: type of 'SND_SOC_ES_SLIM' redefined from 'boolean' to 'tristate'
+sound/soc/codecs/audience/Kconfig:43:warning: type of 'SND_SOC_ES_I2C' redefined from 'boolean' to 'tristate'
+sound/soc/codecs/audience/Kconfig:44:warning: choice value used outside its choice group
+sound/soc/codecs/audience/Kconfig:41:warning: choice value used outside its choice group
+arch/arm/configs/msm8974_sec_defconfig:572:warning: override: reassigning to symbol KEYS
+arch/arm/configs/selinux_defconfig:1:warning: override: reassigning to symbol EXT2_FS_XATTR
+arch/arm/configs/selinux_defconfig:13:warning: symbol value 'y' invalid for SECURITY_SELINUX_CHECKREQPROT_VALUE
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:5:warning: override: reassigning to symbol MSM_ADSPRPC
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:27:warning: override: reassigning to symbol CFG80211
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:45:warning: override: reassigning to symbol LCD_CLASS_DEVICE
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:46:warning: override: reassigning to symbol BACKLIGHT_LCD_SUPPORT
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:47:warning: override: reassigning to symbol BACKLIGHT_CLASS_DEVICE
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:82:warning: override: reassigning to symbol USB_DUN_SUPPORT
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:92:warning: override: reassigning to symbol MHL_VERSION
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:97:warning: override: reassigning to symbol SEC_PM
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:98:warning: override: reassigning to symbol SEC_PM_DEBUG
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:113:warning: override: reassigning to symbol SENSORS_ADSP
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:143:warning: override: reassigning to symbol BATTERY_SAMSUNG
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:144:warning: override: reassigning to symbol SAMSUNG_LPM_MODE
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:146:warning: override: reassigning to symbol BATTERY_BQ28400
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:152:warning: override: reassigning to symbol QPNP_CHARGER
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:153:warning: override: reassigning to symbol QPNP_BMS
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:159:warning: override: reassigning to symbol KS8851
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:177:warning: override: reassigning to symbol HID
+arch/arm/configs/msm8974pro_sec_klte_eur_defconfig:206:warning: override: reassigning to symbol RCU_FAST_NO_HZ
+arch/arm/configs/msm8974_sec_eng_defconfig:51:warning: override: reassigning to symbol SEC_RESTRICT_ROOTING
+arch/arm/configs/msm8974_sec_eng_defconfig:52:warning: override: reassigning to symbol SEC_RESTRICT_SETUID
+arch/arm/configs/msm8974_sec_eng_defconfig:53:warning: override: reassigning to symbol SEC_RESTRICT_FORK
+arch/arm/configs/msm8974_sec_eng_defconfig:54:warning: override: reassigning to symbol SEC_RESTRICT_ROOTING_LOG
+arch/arm/configs/msm8974_sec_eng_defconfig:66:warning: override: reassigning to symbol ENABLE_DEFAULT_TRACERS
+arch/arm/configs/msm8974_sec_eng_defconfig:67:warning: override: reassigning to symbol SEC_NET_FILTER
+arch/arm/configs/msm8974_sec_eng_defconfig:70:warning: override: reassigning to symbol DEVMEM
+KCONFIG_SELINUX(arch/arm/configs/selinux_defconfig)
+KCONFIG_LOG_SELINUX(arch/arm/configs/selinux_log_defconfig)
+KCONFIG_TIMA((null))
+KCONFIG_VARIANT(arch/arm/configs/msm8974pro_sec_klte_eur_defconfig)
+KCONFIG_DEBUG(arch/arm/configs/msm8974_sec_eng_defconfig)
+#
+# configuration written to .config
+#
+make: Leaving directory `/media/playfulgod/Android/Repos/CM11/kernel/samsung/klte'
+make: Entering directory `/media/playfulgod/Android/Repos/CM11/kernel/samsung/klte'
